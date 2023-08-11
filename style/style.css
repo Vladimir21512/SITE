@@ -638,6 +638,11 @@ div.hide {
     align-items: center;
 }
 
+.left_side
+{
+    height:100%;
+}
+
 
 
 @media screen and (max-width:900px) {
@@ -689,7 +694,7 @@ div.hide {
         display: block;
     }
     .left_side
-    {
+    {      
         top: 0;
         background-color: white;
         z-index: 100;
@@ -698,6 +703,10 @@ div.hide {
         position: fixed;
         width: 100%;
         float: none;
+    }
+    .left_side_cont
+    {
+        height: 130%;
     }
     .wrapper
     {

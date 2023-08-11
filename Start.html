@@ -599,6 +599,10 @@
                 tinymce.init({
                 selector: '.post_text'
                 });
+                setTimeout(() => {
+                    var edits = document.getElementsByClassName('tox-tinymce');
+                    edits[0].style.height = '700px';
+        }, 2000);
                 pen_canc.style.display = 'inline'
                 opport.style.display = 'none'
             }

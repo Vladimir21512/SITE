@@ -159,6 +159,11 @@
          tinymce.init({
             selector: '#frm'
         });
+        setTimeout(() => {
+                    var edits = document.getElementsByClassName('tox-tinymce');
+                    edits[0].style.height = '600px';
+        }, 3000);
+        
         var but = document.getElementById('menu_show')
         var sdb = document.getElementById('sdb')
         var arr = document.getElementById('arr')
