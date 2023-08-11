@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Jost:wght@400&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="lft" class="left_side">
+            <div class="border_gray"></div>
+            <div class="left_side_cont">
+                <div class="left_top">
+                    <svg style="height: 50px;margin-right: 30px;" id="hide_btn" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 8H20M4 12H20M4 16H20" stroke="#333333" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                        </svg>
+                    <div class="block_search">
+                        
+                        <input class="search" type="text" name="" placeholder="Найдем по слову" id="">
+                        <div class="search_icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.3636 3C8.90722 3 7.48354 3.43187 6.2726 4.24099C5.06167 5.05011 4.11786 6.20015 3.56052 7.54567C3.00319 8.89119 2.85737 10.3718 3.14149 11.8002C3.42562 13.2286 4.12693 14.5406 5.15675 15.5704C6.18657 16.6003 7.49863 17.3016 8.92703 17.5857C10.3554 17.8698 11.836 17.724 13.1815 17.1667C14.527 16.6093 15.6771 15.6655 16.4862 14.4546C17.2953 13.2437 17.7272 11.82 17.7272 10.3636C17.7271 8.41069 16.9512 6.5378 15.5703 5.15688C14.1894 3.77597 12.3165 3.00012 10.3636 3Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+                                <path d="M15.8574 15.8574L21.0001 21.0001" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                            </svg>                                
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 10%; height: 83px; width: 235px; margin-left: auto; margin-right: auto;" class="all">
+                    <input checked type="radio" name="respond" id="desktop">
+                        <article style="height:100%" id="slider">
+                                <input checked type="radio" name="slider" id="switch1">
+                                <input type="radio" name="slider" id="switch2">
+                                <input type="radio" name="slider" id="switch3">
+                                <input type="radio" name="slider" id="switch4">
+                                <input type="radio" name="slider" id="switch5">
+                            <div id="slides">
+                                <div id="overflow">
+                                    <div class="image">
+                                        <!-- <article><img src="1.jpg"></article>
+                                        <article><img src="2.jpg"></article>
+                                        <article><img src="3.jpg"></article>
+                                        <article><img src="4.jpg"></article>
+                                        <article><img src="5.jpg"></article> -->
+                                        
+                                        <article>
+                                            <div class="img">
+                                                <div class="item_1">
+                                                    <h1 class="month_h">Июнь</h1>
+                                                    <p class="month_p">2023</p>
+                                                </div>
+                                                <div class="item_1">
+                                                    <h1 class="month_h">Март</h1>
+                                                    <p class="month_p">2023</p>
+                                                </div>
+                                                <div class="item_1">
+                                                    <h1 class="month_h">Апр</h1>
+                                                    <p class="month_p">2023</p>
+                                                </div>
+                                                <div class="item_1">
+                                                    <h1 class="month_h">Май</h1>
+                                                    <p class="month_p">2023</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <div class="img">
+                                                <div class="item_1">
+                                                    <h1 class="month_h">Июнь</h1>
+                                                    <p class="month_p">2023</p>
+                                                </div>
+                                                <div class="item_1">
+                                                    <h1 class="month_h">Март</h1>
+                                                    <p class="month_p">2023</p>
+                                                </div>
+                                                <div class="item_1">
+                                                    <h1 class="month_h">Апр</h1>
+                                                    <p class="month_p">2023</p>
+                                                </div>
+                                                <div class="item_1">
+                                                    <h1 class="month_h">Май</h1>
+                                                    <p class="month_p">2023</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                       
+                                        <article>
+                                            <div class="img">
+                                                <div class="item_1">
+                                                    <h1 class="month_h">Июнь</h1>
+                                                    <p class="month_p">2023</p>
+                                                </div>
+                                                <div class="item_1">
+                                                    <h1 class="month_h">Март</h1>
+                                                    <p class="month_p">2023</p>
+                                                </div>
+                                                <div class="item_1">
+                                                    <h1 class="month_h">Апр</h1>
+                                                    <p class="month_p">2023</p>
+                                                </div>
+                                                <div class="item_1">
+                                                    <h1 class="month_h">Май</h1>
+                                                    <p class="month_p">2023</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <div class="img">
+                                                <div class="item_1">
+                                                    <h1 class="month_h">Июнь</h1>
+                                                    <p class="month_p">2023</p>
+                                                </div>
+                                                <div class="item_1">
+                                                    <h1 class="month_h">Март</h1>
+                                                    <p class="month_p">2023</p>
+                                                </div>
+                                                <div class="item_1">
+                                                    <h1 class="month_h">Апр</h1>
+                                                    <p class="month_p">2023</p>
+                                                </div>
+                                                <div class="item_1">
+                                                    <h1 class="month_h">Май</h1>
+                                                    <p class="month_p">2023</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <div class="img">
+                                                <div class="item_1">
+                                                    <h1 class="month_h">Июнь</h1>
+                                                    <p class="month_p">2023</p>
+                                                </div>
+                                                <div class="item_1">
+                                                    <h1 class="month_h">Март</h1>
+                                                    <p class="month_p">2023</p>
+                                                </div>
+                                                <div class="item_1">
+                                                    <h1 class="month_h">Апр</h1>
+                                                    <p class="month_p">2023</p>
+                                                </div>
+                                                <div class="item_1">
+                                                    <h1 class="month_h">Май</h1>
+                                                    <p class="month_p">2023</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="height: 100%;" id="controls">
+                                <label style="margin-left: -28%;margin-top: -4.5%;/* margin-top: 13%; */height: 100%;" for="switch1">
+                                    
+                                </label>
+                                <label style="margin-left: -28%;margin-top: -4.5%;/* margin-top: 13%; */height: 100%;" for="switch2">
+
+                                </label>
+                                <label style="margin-left: -28%;margin-top: -4.5%;/* margin-top: 13%; */height: 100%;" for="switch3">
+
+                                </label>
+                                <label style="margin-left: -28%;margin-top: -4.5%;/* margin-top: 13%; */height: 100%;" for="switch4">
+
+                                </label>
+                                <label style="margin-left: -28%;margin-top: -4.5%;/* margin-top: 13%; */height: 100%;" for="switch5">
+
+                                </label>
+                            </div>
+                            <div style="background-color: rgba(0, 0, 0, 0); opacity: 0;" id="active">
+                                <label for="switch1"></label>
+                                <label for="switch2"></label>
+                                <label for="switch3"></label>
+                                <label for="switch4"></label>
+                                <label for="switch5"></label>
+                            </div>
+                        </article>
+                </div>
+
+
+                <div style="height: 80%; margin-top: 10%;" class="left_list fade_out" id="left_list_items_1">
+                    <div class="item">
+                        <h1 style="width: 50%;
+                        margin-left: 10%;" class="month_h">15 Июня, Вс</h1>
+                        <p style="width: 50%;
+                        margin-left: 10%;" class="month_p">Записей:5</p>
+                    </div>
+                    <div class="item">
+                        <h1 style="width: 50%;
+                        margin-left: 10%;" class="month_h">15 Июня, Вс</h1>
+                        <p style="width: 50%;
+                        margin-left: 10%;" class="month_p">Записей:5</p>
+                    </div>
+                    <div class="item">
+                        <h1 style="width: 50%;
+                        margin-left: 10%;" class="month_h">15 Июня, Вс</h1>
+                        <p style="width: 50%;
+                        margin-left: 10%;" class="month_p">Записей:5</p>
+                    </div>
+                    <div class="item">
+                        <h1 style="width: 50%;
+                        margin-left: 10%;" class="month_h">15 Июня, Вс</h1>
+                        <p style="width: 50%;
+                        margin-left: 10%;" class="month_p">Записей:5</p>
+                    </div>
+                    <div class="item">
+                        <h1 style="width: 50%;
+                        margin-left: 10%;" class="month_h">15 Июня, Вс</h1>
+                        <p style="width: 50%;
+                        margin-left: 10%;" class="month_p">Записей:5</p>
+                    </div>
+                    <div class="item">
+                        <h1 style="width: 50%;
+                        margin-left: 10%;" class="month_h">15 Июня, Вс</h1>
+                        <p style="width: 50%;
+                        margin-left: 10%;" class="month_p">Записей:5</p>
+                    </div>
+                    <div class="item">
+                        <h1 style="width: 50%;
+                        margin-left: 10%;" class="month_h">15 Июня, Вс</h1>
+                        <p style="width: 50%;
+                        margin-left: 10%;" class="month_p">Записей:5</p>
+                    </div>
+
+                    <div style="border: none;" class="item">
+                       <div style="width: auto; display: flex; justify-content: center; height: 40%;" id="pages">
+                            <h1 onclick="page_num(this)"  class="page">1</h1>
+                            <h1 onclick="page_num(this)"  class="page">2</h1>
+                            <h1 onclick="page_num(this)"  class="page">3</h1>
+
+                            <!-- <h1 style="display: flex;align-items: center;justify-content: center;" class="page">
+                                <div style="width: 10px;height: 10px; margin: 0;" id="next_pg" class="arrow_css">
+                                </div>
+                            </h1> -->
+                       </div>
+                    </div>
+                </div>
+                <div style="height: 80%; margin-top: 10%;" class="left_list fade_out" id="left_list_items_2">
+                    <div class="item">
+                        <h1 style="width: 50%;
+                        margin-left: 10%;" class="month_h">1 Мая, Вс</h1>
+                        <p style="width: 50%;
+                        margin-left: 10%;" class="month_p">Записей:2</p>
+                    </div>
+                    <div class="item">
+                        <h1 style="width: 50%;
+                        margin-left: 10%;" class="month_h">15 Июля, Вс</h1>
+                        <p style="width: 50%;
+                        margin-left: 10%;" class="month_p">Записей:5</p>
+                    </div>
+                    <div class="item">
+                        <h1 style="width: 50%;
+                        margin-left: 10%;" class="month_h">15 Июня, Вс</h1>
+                        <p style="width: 50%;
+                        margin-left: 10%;" class="month_p">Записей:5</p>
+                    </div>
+                    <div class="item">
+                        <h1 style="width: 50%;
+                        margin-left: 10%;" class="month_h">5 Декабря, Вс</h1>
+                        <p style="width: 50%;
+                        margin-left: 10%;" class="month_p">Записей:5</p>
+                    </div>
+                    <div class="item">
+                        <h1 style="width: 50%;
+                        margin-left: 10%;" class="month_h">15 Июня, Вс</h1>
+                        <p style="width: 50%;
+                        margin-left: 10%;" class="month_p">Записей:5</p>
+                    </div>
+                    <div class="item">
+                        <h1 style="width: 50%;
+                        margin-left: 10%;" class="month_h">15 Июня, Вс</h1>
+                        <p style="width: 50%;
+                        margin-left: 10%;" class="month_p">Записей:5</p>
+                    </div>
+                    <div class="item">
+                        <h1 style="width: 50%;
+                        margin-left: 10%;" class="month_h">15 Июня, Вс</h1>
+                        <p style="width: 50%;
+                        margin-left: 10%;" class="month_p">Записей:5</p>
+                    </div>
+
+                    <div style="border: none;" class="item">
+                       <div style="width: auto; display: flex; justify-content: center; height: 40%;" id="pages">
+                            <h1 onclick="page_num(this)" class="page">1</h1>
+                            <h1 onclick="page_num(this)" class="page">2</h1>
+                            <h1 onclick="page_num(this)" class="page">3</h1>
+
+                            <!-- <h1 style="display: flex;align-items: center;justify-content: center;" class="page">
+                                <div style="width: 10px;height: 10px; margin: 0;" id="next_pg" class="arrow_css">
+                                </div>
+                            </h1> -->
+                       </div>
+                    </div>
+                </div>
+                <div style="height: 80%; margin-top: 10%;" class="left_list fade_out" id="left_list_items_3">
+                    <div class="item">
+                        <h1 style="width: 50%;
+                        margin-left: 10%;" class="month_h">1 Февраля, Вс</h1>
+                        <p style="width: 50%;
+                        margin-left: 10%;" class="month_p">Записей:0</p>
+                    </div>
+                    <div class="item">
+                        <h1 style="width: 50%;
+                        margin-left: 10%;" class="month_h">15 Августа, Вс</h1>
+                        <p style="width: 50%;
+                        margin-left: 10%;" class="month_p">Записей:5</p>
+                    </div>
+                    <div class="item">
+                        <h1 style="width: 50%;
+                        margin-left: 10%;" class="month_h">15 Июня, Вс</h1>
+                        <p style="width: 50%;
+                        margin-left: 10%;" class="month_p">Записей:5</p>
+                    </div>
+                    <div class="item">
+                        <h1 style="width: 50%;
+                        margin-left: 10%;" class="month_h">5 Декабря, Вс</h1>
+                        <p style="width: 50%;
+                        margin-left: 10%;" class="month_p">Записей:5</p>
+                    </div>
+                    <div class="item">
+                        <h1 style="width: 50%;
+                        margin-left: 10%;" class="month_h">15 Июня, Вс</h1>
+                        <p style="width: 50%;
+                        margin-left: 10%;" class="month_p">Записей:5</p>
+                    </div>
+                    <div class="item">
+                        <h1 style="width: 50%;
+                        margin-left: 10%;" class="month_h">15 Июня, Вс</h1>
+                        <p style="width: 50%;
+                        margin-left: 10%;" class="month_p">Записей:5</p>
+                    </div>
+                    <div class="item">
+                        <h1 style="width: 50%;
+                        margin-left: 10%;" class="month_h">15 Июня, Вс</h1>
+                        <p style="width: 50%;
+                        margin-left: 10%;" class="month_p">Записей:5</p>
+                    </div>
+
+                    <div style="border: none;" class="item">
+                       <div style="width: auto; display: flex; justify-content: center; height: 40%;" id="pages">
+                            <h1 onclick="page_num(this)"  class="page">1</h1>
+                            <h1 onclick="page_num(this)"  class="page">2</h1>
+                            <h1 onclick="page_num(this)"  class="page">3</h1>
+
+                            <!-- <h1 style="display: flex;align-items: center;justify-content: center;" class="page">
+                                <div style="width: 10px;height: 10px; margin: 0;" id="next_pg" class="arrow_css">
+                                </div>
+                            </h1> -->
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rght" class="right_side">
+            
+            <div style="height: 46px;margin-top: 20px; width: 97%; float: right; " id="opport">
+                <!-- <button id="hide_btn"></button> -->
+                
+                <svg id="hide_btn_1" style="height: 100%; margin-right:3%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 3L5 12L14 21" stroke="#333333" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+                </svg>
+                    
+                <svg id="spec_but_eye" class="eye"  viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.9841 13.75C16.3307 13.75 12.583 15.8645 9.6327 20.0936C9.54849 20.2156 9.50234 20.3599 9.50009 20.5082C9.49783 20.6564 9.53958 20.802 9.62004 20.9266C11.8869 24.475 15.5844 27.25 19.9841 27.25C24.336 27.25 28.1094 24.4666 30.3805 20.9102C30.4591 20.7881 30.5009 20.6459 30.5009 20.5007C30.5009 20.3555 30.4591 20.2134 30.3805 20.0912C28.1043 16.5756 24.3032 13.75 19.9841 13.75Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 24.25C22.0711 24.25 23.75 22.5711 23.75 20.5C23.75 18.4289 22.0711 16.75 20 16.75C17.9289 16.75 16.25 18.4289 16.25 20.5C16.25 22.5711 17.9289 24.25 20 24.25Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+                </svg>
+                <svg class="penc" id="spec_but_pen" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26 19V27.625C26 27.8712 25.9515 28.115 25.8573 28.3425C25.763 28.57 25.6249 28.7767 25.4508 28.9508C25.2767 29.1249 25.07 29.263 24.8425 29.3573C24.615 29.4515 24.3712 29.5 24.125 29.5H12.875C12.3777 29.5 11.9008 29.3025 11.5492 28.9508C11.1975 28.5992 11 28.1223 11 27.625V16.375C11 15.8777 11.1975 15.4008 11.5492 15.0492C11.9008 14.6975 12.3777 14.5 12.875 14.5H20.7256" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M29.5597 10.9961C29.4912 10.9208 29.4082 10.8603 29.3156 10.818C29.2231 10.7757 29.1229 10.7527 29.0211 10.7502C28.9194 10.7478 28.8182 10.766 28.7237 10.8037C28.6292 10.8415 28.5434 10.898 28.4713 10.9699L27.8915 11.5469C27.8212 11.6172 27.7817 11.7126 27.7817 11.812C27.7817 11.9114 27.8212 12.0067 27.8915 12.077L28.423 12.6077C28.4579 12.6427 28.4993 12.6705 28.5449 12.6894C28.5905 12.7084 28.6394 12.7181 28.6888 12.7181C28.7382 12.7181 28.7871 12.7084 28.8327 12.6894C28.8783 12.6705 28.9197 12.6427 28.9546 12.6077L29.5199 12.0452C29.8058 11.7597 29.8326 11.2947 29.5597 10.9961ZM26.7191 12.7188L18.2572 21.1656C18.2059 21.2167 18.1686 21.2802 18.149 21.3499L17.7576 22.5156C17.7482 22.5473 17.7475 22.5808 17.7556 22.6128C17.7638 22.6448 17.7804 22.674 17.8037 22.6973C17.827 22.7207 17.8562 22.7373 17.8882 22.7454C17.9202 22.7535 17.9537 22.7528 17.9854 22.7435L19.1502 22.352C19.2199 22.3324 19.2833 22.2951 19.3344 22.2438L27.7813 13.781C27.8595 13.702 27.9033 13.5953 27.9033 13.4842C27.9033 13.3731 27.8595 13.2665 27.7813 13.1875L27.3149 12.7188C27.2358 12.6399 27.1287 12.5956 27.017 12.5956C26.9053 12.5956 26.7982 12.6399 26.7191 12.7188Z" fill="black"/>
+                </svg>    
+              
+                           
+            </div>
+
+            <div style="height: 46px;margin-top: 20px; width: 97%; float: right;" id="opport_stat">
+                <p class="stat" style="color: green;" id="positive"> Позитивно</p>
+                <p class="stat" style="color: #666666;" id="neit"> Нейтрально</p>
+                <p class="stat" style="color: rgb(211, 0, 0);" id="negative"> Негативно</p>
+
+                <p class="stat" id="result"></p>
+
+                <svg id="cancel"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.7464 12L18.6346 7.11179C18.8666 6.88021 18.9971 6.56595 18.9974 6.23815C18.9977 5.91035 18.8677 5.59586 18.6361 5.36387C18.4045 5.13188 18.0903 5.00138 17.7625 5.00109C17.4347 5.0008 17.1202 5.13074 16.8882 5.36233L12 10.2505L7.11179 5.36233C6.8798 5.13033 6.56515 5 6.23706 5C5.90897 5 5.59432 5.13033 5.36233 5.36233C5.13033 5.59432 5 5.90897 5 6.23706C5 6.56515 5.13033 6.8798 5.36233 7.11179L10.2505 12L5.36233 16.8882C5.13033 17.1202 5 17.4349 5 17.7629C5 18.091 5.13033 18.4057 5.36233 18.6377C5.59432 18.8697 5.90897 19 6.23706 19C6.56515 19 6.8798 18.8697 7.11179 18.6377L12 13.7495L16.8882 18.6377C17.1202 18.8697 17.4349 19 17.7629 19C18.091 19 18.4057 18.8697 18.6377 18.6377C18.8697 18.4057 19 18.091 19 17.7629C19 17.4349 18.8697 17.1202 18.6377 16.8882L13.7464 12Z" fill="#222222"/>
+                </svg>
+            </div>
+
+            <div  style="height: 46px;margin-top: 20px; width: 97%; float: right;" id="pen_visible">
+                <svg id="cancel_1" style="height: 100%;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.7464 12L18.6346 7.11179C18.8666 6.88021 18.9971 6.56595 18.9974 6.23815C18.9977 5.91035 18.8677 5.59586 18.6361 5.36387C18.4045 5.13188 18.0903 5.00138 17.7625 5.00109C17.4347 5.0008 17.1202 5.13074 16.8882 5.36233L12 10.2505L7.11179 5.36233C6.8798 5.13033 6.56515 5 6.23706 5C5.90897 5 5.59432 5.13033 5.36233 5.36233C5.13033 5.59432 5 5.90897 5 6.23706C5 6.56515 5.13033 6.8798 5.36233 7.11179L10.2505 12L5.36233 16.8882C5.13033 17.1202 5 17.4349 5 17.7629C5 18.091 5.13033 18.4057 5.36233 18.6377C5.59432 18.8697 5.90897 19 6.23706 19C6.56515 19 6.8798 18.8697 7.11179 18.6377L12 13.7495L16.8882 18.6377C17.1202 18.8697 17.4349 19 17.7629 19C18.091 19 18.4057 18.8697 18.6377 18.6377C18.8697 18.4057 19 18.091 19 17.7629C19 17.4349 18.8697 17.1202 18.6377 16.8882L13.7464 12Z" fill="#222222"/>
+                </svg>
+            </div>
+
+            <div class="posts">
+                <form action="" class="post_text post_p">
+                    <div class="post">
+                        
+                            <h1 class="post_h">Заголовок</h1>
+                            <div style="display: flex;" class="inf">
+                            <p style="color: #666666;" class="small_1 post_source">Источник</p> 
+                            <p style="color: #666666;" class="small post_type">Тип</p> 
+                            <p style="color: #666666;" class="small post_time">Время</p>
+                            </div>
+                            <p class="post_p">
+                                
+                                Dolor sit amet, consectetur adipiscing elit. Donec eget auctor risus. 
+                                Vestibulum semper, nulla placerat imperdiet sollicitudin, sapien nisi <b class="non_green"> bibendum mauris</b>, 
+                                quis aliquam sem eros eget nulla.<b class="non_green">Pellentesque vehicula</b> malesuada arcu at rhoncus. 
+                                Nulla facilisi. Integer in magna vitae nisi sollicitudin semper at quis felis. 
+                                <b class="non_neit"> Donec ornare</b>, <b class="non_red">neque nec</b>  ultricies fringilla, orci risus mattis sem, id elementum 
+                                ante diam non leo. Curabitur eu tristique nisi.<b class="non_green">Etiam et neque</b>  vitae lectus laoreet gravida. 
+                                Sed rhoncus laoreet egestas. Fusce efficitur est turpis, ut accumsan tellus euismod sit amet. 
+                                
+                            </p>
+                            <div style="display: flex;" class="keys">
+                                
+                                <p class="small_1">#Я_Красавчик </p>
+                                <p class="small_1">#Я_Красавчик</p>
+                                <p class="small_1">#Я_Красавчик</p>                           
+                            </div>
+                        
+                    </div>
+                    <div class="post">
+                        <h1 class="post_h">Заголовок1</h1>
+                        <div style="display: flex;" class="inf">
+                        <p style="color: #666666;" class="small_1 post_source">Источник</p> 
+                        <p style="color: #666666;" class="small post_type">Тип</p> 
+                        <p style="color: #666666;" class="small post_time">Время</p>
+                        </div>
+                        <p class="post_p">
+                            
+                            Curabitur eu tristique nisi. <b class="non_green">Etiam et neque</b> vitae lectus laoreet gravida. Sed rhoncus laoreet egestas. 
+                        <b class="non_neit"> Fusce efficitur est turpis</b>, ut accumsan tellus euismod <b class="non_green">sit amet</b>. 
+                            
+                        </p>
+                        <div style="display: flex;" class="keys">
+                            <p class="small_1">#Я_Красавчик</p>
+                            <p class="small_1">#Я_Красавчик</p>
+                            <p class="small_1">#Я_Красавчик</p>
+                        </div>
+                    </div>
+                    <div class="post">
+                        
+                        <h1 class="post_h">Заголовок</h1>
+                        <div style="display: flex;" class="inf">
+                        <p style="color: #666666;" class="small_1 post_source">Источник</p> 
+                        <p style="color: #666666;" class="small post_type">Тип</p> 
+                        <p style="color: #666666;" class="small post_time">Время</p>
+                        </div>
+                        <p class="post_p">
+                            
+                            Dolor sit amet, consectetur adipiscing elit. Donec eget auctor risus. 
+                            Vestibulum semper, nulla placerat imperdiet sollicitudin, sapien nisi <b class="non_green"> bibendum mauris</b>, 
+                            quis aliquam sem eros eget nulla.<b class="non_green">Pellentesque vehicula</b> malesuada arcu at rhoncus. 
+                            Nulla facilisi. Integer in magna vitae nisi sollicitudin semper at quis felis. 
+                            <b class="non_neit"> Donec ornare</b>, <b class="non_red">neque nec</b>  ultricies fringilla, orci risus mattis sem, id elementum 
+                            ante diam non leo. Curabitur eu tristique nisi.<b class="non_green">Etiam et neque</b>  vitae lectus laoreet gravida. 
+                            Sed rhoncus laoreet egestas. Fusce efficitur est turpis, ut accumsan tellus euismod sit amet. 
+                            
+                        </p>
+                        <div style="display: flex;" class="keys">
+                            
+                            <p class="small_1">#Я_Красавчик </p>
+                            <p class="small_1">#Я_Красавчик</p>
+                            <p class="small_1">#Я_Красавчик</p>                           
+                        </div>
+                    
+                    </div>
+                    <div class="post">
+                        <h1 class="post_h">Заголовок1</h1>
+                        <div style="display: flex;" class="inf">
+                        <p style="color: #666666;" class="small_1 post_source">Источник</p> 
+                        <p style="color: #666666;" class="small post_type">Тип</p> 
+                        <p style="color: #666666;" class="small post_time">Время</p>
+                        </div>
+                        <p class="post_p">
+                            
+                            Curabitur eu tristique nisi. <b class="non_green">Etiam et neque</b> vitae lectus laoreet gravida. Sed rhoncus laoreet egestas. 
+                        <b class="non_neit"> Fusce efficitur est turpis</b>, ut accumsan tellus euismod <b class="non_green">sit amet</b>. 
+                            
+                        </p>
+                        <div style="display: flex;" class="keys">
+                            <p class="small_1">#Я_Красавчик</p>
+                            <p class="small_1">#Я_Красавчик</p>
+                            <p class="small_1">#Я_Красавчик</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <script>
+
+        var pages = document.getElementsByClassName('left_list')
+        
+        var all_page = document.getElementById('pages');
+
+        var list_iter = document.getElementsByClassName('left_list')
+
+        var str = 'left_list_items_';
+
+        var arr = document.getElementById('next_pg')
+
+        let hiddenElements = [...document.querySelectorAll('div[class="left_list"]')]
+
+        var side_btn = document.getElementById('hide_btn')
+        var side = document.getElementById('lft')
+
+        var hide_1 = document.getElementById('hide_btn_1')
+
+        var right = document.getElementsByClassName('right_side')
+
+        var rght = document.getElementById('rght')
+
+        side_btn.addEventListener('click', function () {          
+            side.classList.add('hide');
+            side.classList.toggle('left_side')
+            right[0].style.display = 'block'
+        })
+        hide_1.addEventListener('click', function () {
+            side.classList.remove('hide');
+            side.classList.add('left_side')
+            right[0].style.display = 'none'
+                //side.classList.toggle('hide')
+        })
+
+
+        for (let i in hiddenElements) {
+            console.log(hiddenElements[i].style.display)
+            if(hiddenElements[i].style.display=='none')
+            {
+                console.log(hiddenElements);
+            }     
+        }
+    
+       
+
+        // arr.addEventListener('click', function(){
+        //     for (var i in list_iter) 
+        //     {
+        //         if(isNaN(i)==false){
+        //             if(list_iter[i].style.display=='block' ||list_iter[i].style.display=='')
+        //             {
+        //                 console.log(list_iter[i])                       
+                        
+        //                 if(i+1!=list_iter.length)
+        //                 {
+
+        //                     list_iter[i+1].style.display = 'block';
+
+        //                 }
+        //                 else
+        //                 {
+        //                     list_iter[0].style.display = 'block';
+        //                 }
+        //                 list_iter[i].style.display = 'none'
+        //             }
+        //         }         
+        //     }
+        // })
+
+       
+        function page_num(event) {
+            var new_pg = str+event.innerHTML;
+            for (var i in list_iter) 
+            {
+                if(isNaN(i)==false){
+                    if(list_iter[i].style.display=='block' ||list_iter[i].style.display=='')
+                    {
+                        list_iter[i].style.display = 'none'
+                    }
+                }         
+            }
+            document.getElementById(new_pg).style.display='block';
+        }
+    
+       
+        var bool = false;
+        var pen = document.getElementById('spec_but_pen')
+        var pen_canc = document.getElementById('pen_visible')
+        var opport = document.getElementById('opport')
+        pen.addEventListener
+        ('click', function () 
+            {     
+               
+                tinymce.init({
+                selector: '.post_text'
+                });
+                pen_canc.style.display = 'inline'
+                opport.style.display = 'none'
+            }
+        )
+        pen_canc.addEventListener('click', function name(params) {
+            tinymce.remove()
+            opport.style.display = 'flex'
+            pen_canc.style.display = 'none'
+        })
+   
+        window.addEventListener('resize', function(){
+            if (window.innerWidth > 900) {
+                rght.classList.add('anim');
+                rght.style.display = 'block'
+                side.classList.remove('hide')
+                side.classList.add('left_side')
+            } 
+            else
+            {
+                rght.classList.remove('anim');
+            }
+        }
+        )
+    </script>
+</body>
+</html>

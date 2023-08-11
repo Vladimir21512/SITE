@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html style="height: 700px;" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+    <style>
+        #arr
+        {
+            display: none;
+        }
+        .main
+        {
+            width: 90%;
+        }
+        #arr
+        {
+            border-top: 4px solid rgb(255, 252, 252);
+            border-right: 4px solid rgb(255, 255, 255);
+        }
+        #wind
+        {
+            background-position: center;
+            background-repeat: no-repeat;
+           /* background-image: url(./img/Line\ 1.png);*/
+            height: 250px;
+            width: 100%;
+            margin: 0%;            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;      
+        }
+        #sdb
+        {
+            z-index: 1000;
+            transition: 1s;
+        }
+        #timer {
+            display: none;
+        }
+        #audio
+        {
+            display: none;
+            width: 30%; 
+        }
+        .main
+        {
+            float: right;
+        }
+        .tools
+        {
+            height: 70px;
+            width: 100%;
+            display: none;
+        }
+        .show
+        {
+            margin-left: 0;
+        }
+        .rec_wind
+        {
+            margin-top: 7%;
+        }
+
+        @media screen and (max-width:900px) {
+            #arr
+            {
+                display: block;
+            }
+            .left_side
+            {
+                margin-left: -100%;
+            }
+            .show
+            {
+                -webkit-box-shadow: 100px 0px 0px 550px rgb(0 0 0 / 41%);;
+                -moz-box-shadow: 100px 0px 0px 550px rgb(0 0 0 / 41%);;
+                box-shadow: 100px 0px 0px 550px rgb(0 0 0 / 41%);;
+            }
+            .main
+            {
+                
+                float: none;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+            }
+            #audio
+            {
+                width: 90%;
+            }
+            .tools
+            {
+                display: flex;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body style="height: 700px;">
+    <div style="height:700px" class="wrapper">
+        <div style="width: 200px; height:100%; background-color: #666666; float: left; overflow: hidden; position: fixed;" id="sdb" class=" left_side">
+            <div style="margin-top: 9%;float: right;margin-right: 10%;transform: rotate(225deg); " id="arr" class="arrow_css"></div> 
+        </div>
+        <div class="tools">
+            <svg id="menu_show" style="height: 100%;margin-left:9%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 8H20M4 12H20M4 16H20" stroke="#333333" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+            </svg>               
+        </div>
+        <div class="main">
+           
+                <div id="wind1" class="rec_wind">
+                    <div class="circle_img">
+
+                    </div>
+                    <h1 id="prev" style="font-size: 20px;text-align: center;width: 40%; font-weight: 100;">Поделитесь своими мыслями или расскажите, 
+                        как прошел ваш день, а мы превратим речь в текст.</h1>
+                    <div id="wind"> 
+                        
+                        <div id="rec" class="circle_rec">
+                        </div>
+                    </div>
+                    <div style="width: 300px; height: 70px; border: 1px solid #666666; border-radius: 40px; margin-top: 2%;align-items: center; cursor: pointer;" id="timer">
+                        <div id="stop" style="background-size: 25px;width: 23%;background-repeat: no-repeat; background-position: center;height: 70px; width: 70px; 
+                        background-color: #666666; background-image: url('./img/done_icon.png');" class="circle_img">
+                            
+                        </div>
+                        <h1 style="float: right; margin-left: auto;margin-right: auto; font-size: 25px; font-weight: 100;" id="time_txt">00:00</h1>
+                    </div>
+                    <div style="height: auto; 
+                    border-radius: 40px; margin-top: 2%;align-items: center; flex-direction: column;" id="audio">
+                        <h1 style="text-align: center;">Вы уверены что хотите отправить это аудио?</h1>
+                        <form action="" method="post">
+                            <input style="width: 70px; height: 30px;" type="submit" value="Да">
+                            <input style="width: 70px; height: 30px;" type="submit" value="Нет">
+                        </form>
+                    </div>
+                </div>
+                
+        </div>
+    </div>
+    <script src="./js/recorder.js"></script>
+    <script src="./js/web-audio-recorder-js-master/lib/WebAudioRecorder.js"></script>
+    <script>
+        var but = document.getElementById('menu_show')
+        var sdb = document.getElementById('sdb')
+        var arr = document.getElementById('arr')
+        var container = $("#sdb");
+
+        but.addEventListener('click', function(){
+            sdb.classList.add('show')
+            sdb.classList.toggle('left_side')
+        })
+
+       arr.addEventListener('click', function(){
+       // container.addClass('hide')
+        container.removeClass('show')
+        container.addClass('left_side')
+       })
+
+    </script>
+</body>
+</html>
